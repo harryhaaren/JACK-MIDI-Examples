@@ -1,0 +1,18 @@
+			Jack MIDI Examples
+
+This repo is here so I can upload some of my learning code, which
+may be of use to some people who are also trying to learn JACK MIDI.
+
+Keep in mind, that I'm not an author of JACK, and what I code here
+might not be the best solution, nor the one advised by the JACK authors.
+
+Its me learning JACK MIDI things. Maybe others benifit from it, otherwise
+its a good backup for my source files. :-)
+
+To use:
+./waf configure
+./waf
+./run.sh
+
+And if you've got the right headers & libs, your done!
+Cheers, -Harry (harryhaaren@gmail.com)
