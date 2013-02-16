@@ -18,6 +18,7 @@
 	along with PrintJackMidi.  If not, see <http://www.gnu.org/licenses/>. */
 
 #include <iostream>
+#include <unistd.h>
 #include "jack.hpp"
 
 int main(int argc,char *argv[])

@@ -78,7 +78,12 @@ int Jack::process(jack_nframes_t nframes)
 		for(int i=0; i<event_count; i++)
 		{
 			jack_midi_event_get(&in_event, port_buf, i);
-			std::cout << "event" << i << " time is " << in_event.time << ". Info: " << (int)*(in_event.buffer) << " " << (int)*(in_event.buffer+sizeof(char))<< " " << (int)*(in_event.buffer+2*sizeof(char)) << std::endl;
+      
+      // Using "cout" in the JACK process() callback is NOT realtime, this is
+      // used here for simplicity.
+			std::cout << "Event: " << i << " Frame#: " << in_event.time << " \tMessage:\t"
+                << (long)in_event.buffer[0] << "\t" << (long)in_event.buffer[1]
+                << "\t" << (long)in_event.buffer[2] << std::endl;
 		}
 	}
 	
