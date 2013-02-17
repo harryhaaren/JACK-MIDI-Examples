@@ -1,6 +1,6 @@
 
 /*
-  Program PrintJackMidi: A MIDI tool
+  Program RecordPlayback: A MIDI tool
   Author: Harry van Haaren
   E-mail: harryhaaren@gmail.com
   Copyright (C) 2010 Harry van Haaren
