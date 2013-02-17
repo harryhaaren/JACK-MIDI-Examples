@@ -1,4 +1,7 @@
 
 .waf*
-build/*
+printData/build/*
+recordPlayback/build/*
 /.lock-wscript
+/recordPlayback/.lock-wscript
+/printData/.lock-wscript
