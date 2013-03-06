@@ -27,9 +27,10 @@ int main(int argc,char *argv[])
 {
   
   std::cout << "\
-  \t\t\t Print JACK MIDI\n\
-  \tThis program creates a JACK MIDI port and will\n\
-  \tprint in the console all input it recieves" << std::endl;
+  \t\t\t Midi Record Play\n\
+  \tThis program creates JACK MIDI input & output ports and will\n\
+  \tprint in the console all input it recieves, and print\n\
+  \tevents as they're played back" << std::endl;
   
   // Create Jack object, the constructor registers the MIDI port, etc
   Jack jack;

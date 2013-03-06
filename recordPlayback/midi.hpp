@@ -35,7 +35,7 @@ class MidiEvent
       memcpy( data, inData, sizeof(unsigned char) *3 );
     }
     long frame;
-    unsigned char* data[3];
+    unsigned char data[3];
 };
 
 #endif 

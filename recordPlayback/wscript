@@ -13,6 +13,7 @@ def configure(conf):
 	print('Configuring the build enviroment...')
 	
 	conf.check_tool('compiler_cxx')
+	conf.env.CXXFLAGS = '-g'
 	conf.check_cfg	(package='jack',at_least_version='1.0.0',args='--cflags --libs',uselib_store='JACK')
 
 def build(bld):
